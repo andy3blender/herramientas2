@@ -1,21 +1,180 @@
 body {
   margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  font-family: $font-family-main;
+  background-color: $main-bg;
 }
 
-.uoc-logo {
+section {
   display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+a {
+  text-decoration: none;
+  color: $secondary-bg-dark;
+
+  &:hover {
+    color: $secondary-bg-contrast;  
+  }
 }
+
+.main-header {
+  text-align: center; 
+}
+
+.main-header__avatar {
+  background-color: $secondary-bg;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.avatar__circle {
+  clip-path: circle(50% at 50% 50%);
+  width: 200px;
+}
+
+.main-header__name {
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+.main-header__surname {
+  text-transform: uppercase;
+  font-family: $font-family-surname;
+  font-size: 60px;
+  padding-bottom: 20px;
+  color: $secondary-bg-contrast;
+}
+
+.main-header__degree {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.main-header__social-container {
+  padding-bottom: 15px;
+}
+
+.main-header__social {  
+  font-size: 35px;    
+}
+
+.main-header__directions {
+  border-top: 2px solid $secondary-bg;
+  padding-top: 10px;    
+}
+
+.directions-item__title {
+  font-weight: bold;
+}
+
+.body-title {
+  border: 1px solid transparent;
+  background-color: $secondary-bg-dark;
+  padding-left: 20px;
+  color: $main-bg;  
+}
+
+.body-content {
+  background-color: $secondary-bg;
+  padding: 20px;
+  &__item {
+    padding-bottom: 10px;
+    &--timeline {
+      border-left: 4px dotted $secondary-bg-contrast;
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+  }
+  &__title {  
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 11px;
+    padding-bottom: 5px;
+    &--light {
+      color: $secondary-bg-contrast;
+      font-weight: bold;
+    }
+  }
+  &__progress-bar {  
+    width: 100%;
+  }
+}
+
+.icon-experience {
+  position: relative;
+  left: -25px;
+  top: -4px; 
+}
+
+//cambios en viewport
+@media (min-width: 760px) {
+  .avatar__circle {
+    width: 230px;
+  }
+
+  .main-header__directions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+  }
+
+  .directions-item {
+    width: 250px;
+  }
+
+  .body-content {
+    &__progress-bar {  
+      width: 90%;
+    }
+    &--two-colums {
+      display: grid;
+      column-gap: 10px;
+      grid-template-columns: 1fr 1fr;  
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .directions-item {
+    width: 180px;
+  }
+  .directions--strech {
+    grid-column: span 2/4;    
+  }
+
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__avatar {
+      padding-top: 50px;
+      grid-row: span 2/3;
+    }
+    &__social-container {
+      align-self: end;
+    }
+  }
+  
+  .section-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .body {
+    &-title {
+      padding-right: 15px;
+      text-align: right;
+    }
+    &--light {
+      background-color: $secondary-bg;
+      color: #000;
+    }
+    &--dark { 
+      background-color: $main-bg;
+      color: #000;
+    }
+  }
+}
+

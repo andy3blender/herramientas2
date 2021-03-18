@@ -1,24 +1,383 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <title>Andr&eacute;s Vargas</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-  <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-  <p>
-    This is a starter template for the Advanced HTML and CSS Tools courses
-    from the Master's Program in Multimedia Applications and the Master's
-    Program in Web App and Website Development at the Universitat Oberta de
-    Catalunya.
-  </p>
-  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <div class="main-container">
+
+    <!-- BASIC INFORMATION -->
+    <section>
+      <div class="main-header">
+        <div class="main-header__avatar">
+          <img class="avatar__circle" src="./assets/images/foto_avatar.jpg" alt="Foto de perfil">
+        </div>
+
+        <div>
+          <div class="main-header__name">Andr&eacute;s</div>
+          <div class="main-header__surname">Vargas</div>
+          <div class="main-header__degree">Ingeniero de sistemas</div>
+        </div>
+
+        <div class="main-header__social-container">
+          <div class="main-header__social">
+
+            <a href="#">
+              <i class="fab fa-facebook" title="Facebook"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-instagram-square" title="Instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-whatsapp-square" title="Whatsapp"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-youtube-square" title="Youtube"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-github" title="Github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="main-header__directions directions--strech">
+          <div class="directions-item">
+            <p class="directions-item__title">Ciudad</p>
+            <p>Quito - Ecuador</p>
+          </div>
+          <div class="directions-item">
+            <p class="directions-item__title">Tel&eacute;fono</p>
+            <p>(593) 022-224-222</p>
+          </div>
+          <div class="directions-item">
+            <p class="directions-item__title">Mail</p>
+            <p>avargasman@uoc.edu</p>
+          </div>
+          <div class="directions-item">
+            <p class="directions-item__title">Web</p>
+            <p><a href="#">www.andresvargas.com</a></p>
+          </div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--dark">
+          <p>INTRO</p>
+          <p>Acerca de mi</p>
+        </div>
+        <div class="body-content body--light">
+          <p>Desarrollador de software bilingüe con experiencia en aplicaciones web. Tras más de 7 años trabajando en
+            empresas de tecnología, no solo tengo conocimientos en SQL, .NET, R y Git, sino que también he logrado
+            aprender sobre el giro de negocio financiero, obteniendo conocimientos en áreas como: cumplimiento
+            (prevención de lavado de activos), riesgo operativo y riesgos financieros. Mi objetivo principal es generar
+            proyectos funcionales que superen las expectativas de los clientes de la
+            empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONOCIMIENTOS -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--light">
+          <p>CONOCIMIENTOS</p>
+          <p>Conocimientos generales</p>
+        </div>
+        <div class="body-content body-content--two-colums body--dark">
+          <div class="body-content__item">
+            <div class="body-content__title">.NET</div>
+            <div>Manejo del IDE .NET para el desarrollo de back-end, servicios web, comunicación con bases de datos
+            </div>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">CSS</div>
+            <div>Creación de hojas de estilos modernas, aplicando metodologías actuales.</div>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title"> <abbr title="Hypertext Markup Language">HTML</abbr></div>
+            <div>Manejo de lenguaje Html para la creación de páginas web responsive.</div>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">PHP</div>
+            <div>Manejo de lenguaje PHP para la creación de aplicaciones cliente/servidor</div>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">BASE DE DATOS</div>
+            <div>Manejo de bases de datos relacionales: SQL SERVER, MySql, PostgreSql</div>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title"><abbr title="Content Management System">CMS</abbr></div>
+            <div>Manejo de CMS como: Joomla, Drupal, Wordpress</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--dark">
+          <p>HABILIDADES</p>
+          <p>Medici&oacute;n de habilidades</p>
+        </div>
+        <div class="body-content body-content--two-colums body--light">
+
+          <div class="body-content__item">
+            <div class="body-content__title">80% GIT</div>
+            <progress class="body-content__progress-bar" value="75" max="100"> </progress>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">75% PageSpedd Insinghts</div>
+            <progress class="body-content__progress-bar" value="75" max="100"> </progress>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">60% Photoshop </div>
+            <progress class="body-content__progress-bar" value="60" max="100"> </progress>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">52% Illustrator</div>
+            <progress class="body-content__progress-bar" value="52" max="100"> </progress>
+          </div>
+
+          <div class="body-content__item">
+            <div class="body-content__title">65% After Effects</div>
+            <progress class="body-content__progress-bar" value="65" max="100"> </progress>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--light">
+          <p>EXPERIENCIA</p>
+          <p>&Aacute;mbito laboral</p>
+        </div>
+        <div class="body-content body--dark">
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-briefcase icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">2014 - presente</div>
+              <div class="body-content__title">IDCE CONSULTING</div>
+              <div class="body-content__subtitle">Especialista en desarrollo de software</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Las tareas que se realizan en este cargo es la de diseñar, tanto el front-end como el back-end, de
+              aplicaciones web, las características de estas aplicaciones son tomadas de los requerimientos
+              proporcionados por el cliente (software a medida). También se realiza diseño de bases de datos
+              relacionales las cuales sirven de fuente de información para las aplicaciones antes mencionadas.</p>
+          </div>
+
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-briefcase icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">2013-2014</div>
+              <div class="body-content__title"><abbr
+                  title="Secretaria Nacional de Planificación y Desarrollo">SENPLADES</abbr></div>
+              <div class="body-content__subtitle">Diseño web</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>En la <em>Secretaria Nacional de Planificación y Desarrollo</em> realizaba diversas tareas entre las
+              cuales se
+              puede mencionar: soporte de segundo nivel o segunda línea, manejo de incidentes a traves de tickets,
+              desarrollo de módulos para la página institucional centrada en el back-end, creación de servicios web.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--dark">
+          <p>EDUCACI&Oacute;N</p>
+          <p>Mi formaci&oacute;n acad&eacute;mica</p>
+        </div>
+        <div class="body-content body--light">
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-graduation-cap icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">2020-present</div>
+              <div class="body-content__title">UNIVERSITAD OBERTA DE CATALUNYA</div>
+              <div class="body-content__subtitle">Máster en desarrollo de aplicaciones web</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Catalunya, ES</div>
+            </div>
+            <p>El máster universitario de Desarrollo de Sitios y Aplicaciones Web pretende cubrir la creciente demanda
+              profesional de desarrolladores web especializados en front-end, con conocimientos profundos de marcación y
+              maquetación, dominio de las herramientas que se utilizan en entornos de producción y conocimientos de
+              back-end.</p>
+          </div>
+
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-graduation-cap icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">2009-2015</div>
+              <div class="body-content__title">UNIVERIDAD POLITÉCNICA SALESIANA</div>
+              <div class="body-content__subtitle">Ingeniería de sistemas</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Estudios superiores con una sólida base de conocimiento técnico y científico
+              sustentada en un enfoque humanista y de responsabilidad ética y social, capaz de liderar innovar y
+              desarrollar respuestas tecnológicas que permitan contribuir a la búsqueda de soluciones para problemas de
+              la sociedad y el desarrollo del país, alineado a estándares de calidad nacionales e internacionales.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMACION ADICIONAL -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--light">
+          <p>FORMACI&Oacute;N ADICIONAL</p>
+          <p>Cursos y seminarios</p>
+        </div>
+        <div class="body-content body--dark">
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-medal icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">02/09/2019 - 16/09/2019</div>
+              <div class="body-content__title">Administración de Azure</div>
+              <div class="body-content__subtitle">Taller</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Taller dictado por la empresa <em>Inova Solutions</em> con una duración de 20 horas, se abordó la
+              administración básica de la nube de Microsoft.</p>
+          </div>
+
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-medal icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">20/07/2019 - 04/08/2019</div>
+              <div class="body-content__title">Inteligencia de negocios Power BI</div>
+              <div class="body-content__subtitle">Taller</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Taller dictado por la <em>Sociedad Ecuatoriana de Estadística</em> con una duración de 24 horas, en la
+              cual se abordó la
+              administración la herramienta Power BI.</p>
+          </div>
+
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-medal icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">19/03/2018 - 18/05/2018</div>
+              <div class="body-content__title">Análisis estadístico con R</div>
+              <div class="body-content__subtitle">Taller</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Taller dictado por la <em>Facultad Latinoamericana de Ciencias Sociales</em> con una duración de 45
+              horas, en la
+              cual se abordó el análisis estadístico mediante el uso de la herramienta R.</p>
+          </div>
+
+          <div class="body-content__item body-content--two-colums body-content__item--timeline">
+            <div>
+              <i class="fas fa-medal icon-experience"></i>
+              <div class="body-content__subtitle body-content__subtitle--light">21/02/2017 - 15/03/2017</div>
+              <div class="body-content__title">Android básico</div>
+              <div class="body-content__subtitle">Taller</div>
+              <div class="body-content__subtitle body-content__subtitle--light">Quito, EC</div>
+            </div>
+            <p>Taller dictado por la <em>Escuela Politécnica Nacional </em> con una duración de 32
+              horas, en la
+              cual se abordó el desarrollo de aplicaciones móviles utilizando el IDE de Google Android Studio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTOS -->
+    <section>
+      <div class="section-container">
+        <div class="body-title body--dark">
+          <p>CONT&Aacute;CTOS</p>
+          <p>V&iacute;as de contacto</p>
+        </div>
+        <div class="body-content body--light">
+
+          <div class="main-header__directions directions--strech">
+            <div class="directions-item">
+              <p class="directions-item__title">Ciudad</p>
+              <p>Quito - Ecuador</p>
+            </div>
+            <div class="directions-item">
+              <p class="directions-item__title">Tel&eacute;fono</p>
+              <p>(593) 022-224-222</p>
+            </div>
+            <div class="directions-item">
+              <p class="directions-item__title">Mail</p>
+              <p>avargasman@uoc.edu</p>
+            </div>
+            <div class="directions-item">
+              <p class="directions-item__title">Web</p>
+              <p><a href="#">www.andresvargas.com</a></p>
+            </div>
+          </div>
+
+          <hr>
+          <div>
+            <div class="main-header__name">Andr&eacute;s</div>
+            <div class="main-header__surname">Vargas</div>
+            <div class="main-header__social">
+
+              <a href="#">
+                <i class="fab fa-facebook" title="Facebook"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-instagram-square" title="Instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-whatsapp-square" title="Whatsapp"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-youtube-square" title="Youtube"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-github" title="Github"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
 </body>
 
 </html>
